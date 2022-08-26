@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -23,6 +22,12 @@ class App extends Component {
       ]
     };
   }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(Response => console.log(Response))
+  }
+
   render() {
     return (
       <div className="App">
