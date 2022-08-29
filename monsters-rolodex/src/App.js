@@ -7,8 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [
-      ]
+      monsters: []
     };
   }
 
@@ -22,9 +21,7 @@ class App extends Component {
     return (
       <div className="App">
       <CardList monsters={this.state.monsters}>
-        {
-          this.state.monsters.map(monster => <h1 key={monster.id}>{monster.name}</h1>)
-        }
+
       </CardList>
       </div>
     );
